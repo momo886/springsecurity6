@@ -1,0 +1,32 @@
+logging:
+    level:
+        com:
+            xiaoxi:
+                api: debug
+mybatis-plus:
+    mapper-locations: classpath:/mapper/*.xml
+    type-aliases-package: com.xiaoxi.entity
+server:
+    port: 5000
+spring:
+    application:
+        name: user-service
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        druid:
+            initial-size: 5
+            max-active: 20
+            min-idle: 5
+        password: 123456
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://localhost:3306/user-service?useSSL=false&serverTimezone=UTC
+        username: root
+
+
+    main:
+        allow-bean-definition-overriding: true
+
+
+
+
+
